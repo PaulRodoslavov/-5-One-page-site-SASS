@@ -1,0 +1,67 @@
+// ==========================================================================
+// Main
+// ==========================================================================
+
+// Layout
+
+.container {
+
+	width: 90%;
+	max-width: em(1400px);
+	margin: 0 auto;
+	// padding: 0 em(25px) em(15px);
+}
+
+.grid__row {
+	@extend %center-align;
+    padding: 3em 0;
+}
+
+
+// ==========================================================================
+// Nav
+// ==========================================================================
+
+.nav {
+	padding: 0;
+	&__item{
+		@extend %nav-item-link;		
+		
+		& a{			
+			font-weight: $font-weight--light;
+			@extend %nav-item-a;
+		}
+
+		&:hover {
+				background: $fountain-blue;
+				border-radius: em(5px);
+				color: $white;
+			}		
+	}
+}
+
+// ==========================================================================
+// Card
+// ==========================================================================
+
+.card {
+
+	& p{
+		@extend %left-align;
+		color: getColor(grey);
+
+	}
+	& .headline--secondary {
+		@extend %left-align;
+		letter-spacing: 1px;
+		color: getColor(grey, x-light);
+		font-weight: $font-weight--thin;
+	}
+	& .headline--primary{
+		color: $fountain-blue;
+		line-height: 1.2;
+		width: 90%;
+		margin-left: em(15px);
+		@extend %left-align;
+	}
+}

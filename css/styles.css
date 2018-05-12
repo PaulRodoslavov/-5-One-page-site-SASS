@@ -1,0 +1,80 @@
+@import url("reset.css");
+.nav__item {
+  display: flex;
+  height: 3.125em;
+  color: #797e83;
+}
+
+.nav__item a {
+  font-weight: 100;
+  margin: auto;
+  font-size: 1.125em;
+  color: inherit;
+}
+
+.grid__row {
+  text-align: center;
+}
+
+.card p, .card .headline--secondary, .card .headline--primary {
+  text-align: left;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Libre Franklin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  width: 90%;
+  max-width: 87.5em;
+  margin: 0 auto;
+}
+
+.grid__row {
+  padding: 3em 0;
+}
+
+.nav {
+  padding: 0;
+}
+
+.nav__item a {
+  font-weight: 300;
+}
+
+.nav__item:hover {
+  background: #52bab3;
+  border-radius: 0.3125em;
+  color: #fff;
+}
+
+.card p {
+  color: #797e83;
+}
+
+.card .headline--secondary {
+  letter-spacing: 1px;
+  color: #d6d7d9;
+  font-weight: 100;
+}
+
+.card .headline--primary {
+  color: #52bab3;
+  line-height: 1.2;
+  width: 90%;
+  margin-left: 0.9375em;
+}
