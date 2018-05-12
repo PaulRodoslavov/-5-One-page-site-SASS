@@ -5,7 +5,6 @@
 // Layout
 
 .container {
-
 	width: 90%;
 	max-width: em(1400px);
 	margin: 0 auto;
@@ -41,7 +40,7 @@
 }
 
 // ==========================================================================
-// Card
+// Headlines
 // ==========================================================================
 
 .card {
@@ -49,19 +48,66 @@
 	& p{
 		@extend %left-align;
 		color: getColor(grey);
+	}	 
+}
 
+.headline--secondary {
+	@extend %left-align;
+	letter-spacing: 1px;
+	color: getColor(grey, x-light);
+	font-weight: $font-weight--thin;
+}
+
+.headline--primary{
+	color: $fountain-blue;
+	line-height: 1.2;
+	width: 90%;
+	margin-left: em(15px);
+	@extend %left-align;	
+}
+
+
+.blockquote{
+	border-left: 6px solid $fountain-blue;
+	padding-left: em(15px);	
+	width: 80%;
+	margin: 20px auto 40px;
+	font-style: italic;
+	color: getColor(grey, light);
+	font-size: em(20px);
+	line-height: 1.2;
+	@extend %left-align;
+}
+
+// ==========================================================================
+// Form
+// ==========================================================================
+
+.img--avatar{
+	display: block;
+	margin: 15px auto;
+}
+
+.form {
+
+	&__label--hidden{
+		display: none;
 	}
-	& .headline--secondary {
-		@extend %left-align;
-		letter-spacing: 1px;
-		color: getColor(grey, x-light);
-		font-weight: $font-weight--thin;
+	&__input{
+		display: block;
+		border: none;
+		height: em(45px);
 	}
-	& .headline--primary{
-		color: $fountain-blue;
-		line-height: 1.2;
-		width: 90%;
-		margin-left: em(15px);
-		@extend %left-align;
-	}
+}
+
+
+
+
+
+
+
+
+
+.img--frame{
+	width: 100%;
 }
