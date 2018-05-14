@@ -3,6 +3,7 @@
   display: flex;
   height: 3.125em;
   color: #797e83;
+  padding: 0.625em;
 }
 
 .nav__item a {
@@ -69,15 +70,35 @@ body {
   font-weight: 400;
 }
 
+@media (min-width: 769px) {
+  .form > .img--avatar {
+    margin-top: 1.25em;
+  }
+}
+
 .img--avatar {
   display: block;
   margin: 15px auto;
+}
+
+@media (min-width: 769px) {
+  .img--avatar {
+    margin-top: 0;
+    display: flex;
+    margin: auto;
+  }
 }
 
 .img--frame {
   width: 100%;
   border: 1px solid #d6d7d9;
   padding: 0.625em;
+}
+
+@media (min-width: 769px) {
+  .img--frame {
+    margin-left: 1.25em;
+  }
 }
 
 .container {
@@ -90,8 +111,21 @@ body {
   padding: 3em 0;
 }
 
+@media (min-width: 769px) {
+  .grid__row {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .nav {
   padding: 0;
+}
+
+@media (min-width: 769px) {
+  .nav__item {
+    margin-right: 1.25em;
+  }
 }
 
 .nav__item a {
@@ -104,6 +138,13 @@ body {
   color: #fff;
 }
 
+@media (min-width: 769px) {
+  .nav {
+    display: flex;
+    width: 80%;
+  }
+}
+
 .card p {
   color: #797e83;
 }
@@ -112,13 +153,14 @@ body {
   letter-spacing: 1px;
   color: #999da1;
   font-weight: 100;
+  margin: 0;
 }
 
 .headline--primary {
   color: #6EDBBC;
   line-height: 1.2;
   width: 90%;
-  margin: 1.875em 0 1.875em 0.9375em;
+  margin: 0.9375em 0 0.9375em 0.9375em;
 }
 
 .blockquote {
@@ -142,6 +184,14 @@ body {
 
 .form > .btn--default {
   background: #39add1;
+}
+
+@media (min-width: 769px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 .btn--default {
@@ -231,4 +281,56 @@ body {
   padding-left: 0.9375em;
   color: #797e83;
   font-weight: 700;
+}
+
+@media (min-width: 769px) {
+  .grid__col--1 {
+    width: 7.04225%;
+  }
+  .grid__col--2 {
+    width: 15.49296%;
+  }
+  .grid__col--3 {
+    width: 23.94366%;
+  }
+  .grid__col--4 {
+    width: 32.39437%;
+  }
+  .grid__col--5 {
+    width: 40.84507%;
+  }
+  .grid__col--6 {
+    width: 49.29577%;
+  }
+  .grid__col--7 {
+    width: 57.74648%;
+  }
+  .grid__col--8 {
+    width: 66.19718%;
+  }
+  .grid__col--9 {
+    width: 74.64789%;
+  }
+  .grid__col--10 {
+    width: 83.09859%;
+  }
+  .grid__col--11 {
+    width: 91.5493%;
+  }
+  .grid__col--12 {
+    width: 100%;
+  }
+}
+
+.grid__col--9 {
+  display: flex;
+  justify-content: center;
+}
+
+.grid__col--6 {
+  display: flex;
+}
+
+.centered {
+  margin: 0 auto;
 }

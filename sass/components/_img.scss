@@ -2,13 +2,28 @@
 // Images
 // ==========================================================================
 
+
+.form >.img--avatar{
+	@include mq(medium){
+		margin-top: em(20px);	
+	}
+}
+
 .img--avatar{
 	display: block;
 	margin: 15px auto;
+	@include mq(medium){
+		margin-top: 0;		
+		@include flexbox($mrg:auto);
+	
+	}
 }
 
 .img--frame{
 	width: 100%;
 	border: 1px solid getColor(grey, x-light);
 	padding: em(10px);
+		@include mq(medium){			
+			margin-left: em(20px);
+		}
 }
