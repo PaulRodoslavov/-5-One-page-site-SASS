@@ -20,39 +20,6 @@
   text-align: left;
 }
 
-[class^='btn--'] {
-  display: block;
-  width: 100%;
-  border: none;
-  border-radius: 0.3125em;
-  height: 2.8125em;
-  margin-top: 0.9375em;
-  text-transform: uppercase;
-  font: 16px "Libre Franklin", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #fff;
-  font-weight: 700;
-}
-
-[class^='btn--']--default {
-  background-color: #39add1;
-}
-
-[class^='btn--']--success {
-  background-color: #5ece7f;
-}
-
-[class^='btn--']--error {
-  background-color: #e67478;
-}
-
-[class^='btn--']--warning {
-  background-color: #ff784f;
-}
-
-[class^='btn--']--info {
-  background-color: #9279c3;
-}
-
 .form__input {
   border: none;
   border-bottom: 0.4375em solid #6EDBBC;
@@ -71,6 +38,12 @@
 
 .form__input:focus {
   outline: none;
+}
+
+.theme__colors {
+  border-radius: 0.3125em;
+  margin-bottom: 0.4375em;
+  padding: 0.625em 0;
 }
 
 * {
@@ -189,4 +162,73 @@ body {
 
 .btn--info {
   background-color: #9279c3;
+}
+
+[class^='btn--'] {
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 0.3125em;
+  padding: 0.8125em 0;
+  margin-top: 0.9375em;
+  text-transform: uppercase;
+  font: 16px "Libre Franklin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  font-weight: 700;
+}
+
+.grid__col--12.theme__colors {
+  background-color: #6EDBBC;
+  text-align: left;
+  padding-left: 0.9375em;
+  color: #797e83;
+  font-weight: 700;
+}
+
+.grid__col--6.theme__colors {
+  background-color: #15c2f3;
+  text-align: left;
+  padding-left: 0.9375em;
+  color: #797e83;
+  font-weight: 700;
+}
+
+.grid__col--4.theme__colors {
+  background-color: #76DBF8;
+  text-align: left;
+  padding-left: 0.9375em;
+  color: #797e83;
+  font-weight: 700;
+}
+
+.grid__col--3.theme__colors {
+  background-color: #a08bcb;
+  text-align: left;
+  padding-left: 0.9375em;
+  color: #797e83;
+  font-weight: 700;
+}
+
+.grid__col--5.theme__colors {
+  background-color: #5ece7f;
+  text-align: left;
+  padding-left: 0.9375em;
+  color: #797e83;
+  font-weight: 700;
+}
+
+.grid__col--7.theme__colors {
+  background-color: #e67478;
+  text-align: left;
+  padding-left: 0.9375em;
+  color: #797e83;
+  font-weight: 700;
+}
+
+.grid__col--8.theme__colors {
+  background-color: #ff784f;
+  text-align: left;
+  padding-left: 0.9375em;
+  color: #797e83;
+  font-weight: 700;
 }

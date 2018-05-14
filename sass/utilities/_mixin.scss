@@ -26,3 +26,17 @@
 	}
 }
 
+// Generate modifier color classes
+
+@mixin grid-colors($map) {
+	@each $theme, $color in $map {
+		&--#{$theme}.theme__colors {
+			background-color: $color;
+			text-align: left;
+			padding-left: em(15px);		
+			color: getColor(grey);
+			font-weight: $font-weight--bold;
+		}
+	}
+}
+

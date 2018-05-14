@@ -8,13 +8,15 @@ $white : #fff;
 $black : #0b0b0b;
 $grey  : #797e83;
 
-$fountain-blue  : #52bab3;
+$fountain-blue  : #76DBF8;
 $emerald        : #5ece7f;
 $sunglo         : #e67478;
 $coral          : #ff784f;
 $purple-majesty : #9279c3;
 $scooter        : #39add1;
 $bermuda        : #6EDBBC;
+
+
 
 // Text
 
@@ -50,6 +52,17 @@ $ui-colors: (
   info    : $purple-majesty
 );
 
+// Grid Theme Colors
+
+$grid-theme-colors: (
+  12  : $bermuda,
+  6 : darken($fountain-blue, 20%),
+  4 : $fountain-blue,
+  3 : lighten($purple-majesty, 5%),
+  5 : $emerald,
+  7 : $sunglo,
+  8 : ($coral)
+);
 
 // Font Weights
 
