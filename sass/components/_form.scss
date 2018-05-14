@@ -1,0 +1,24 @@
+// ==========================================================================
+// Form
+// ==========================================================================
+
+.form {
+	
+	@include e(label--hidden){
+		display: none;	
+	}
+
+	@include e(input){				
+		@extend %btn-border;
+		&:last-of-type{
+			margin: em(20px) auto em(40px);
+		}
+	}
+	& > .btn--default {		
+		background: $scooter;		
+	}
+	@include mq(medium){
+		@include flexbox(flex, column, $jus-con: space-between);
+	}
+
+}

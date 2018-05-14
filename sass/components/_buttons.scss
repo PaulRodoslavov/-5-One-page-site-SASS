@@ -1,0 +1,22 @@
+// ==========================================================================
+// Buttons
+// ==========================================================================
+
+.btn{
+	@include bg-colors($ui-colors);
+}
+
+[class^='btn--']{
+	display: block;	
+	width: 100%;
+	border: none;
+	border-radius: em(5px);
+	padding: em(13px) 0;
+	margin-top: em(15px);
+	text-transform: uppercase;
+	font: $base__font-size $font-family--primary;
+	color: $white;
+	font-weight: $font-weight--bold;	
+}
+
+

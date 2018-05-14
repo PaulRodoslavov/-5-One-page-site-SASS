@@ -1,0 +1,30 @@
+// ==========================================================================
+// Nav
+// ==========================================================================
+
+.nav {
+	padding: 0;
+	&__item{
+		@extend %nav-item-link;	
+		@include mq(medium){
+		margin-right: em(20px);
+
+    	}
+		
+		& a{			
+			font-weight: $font-weight--light;
+			@extend %nav-item-a;
+		}
+
+		&:hover {
+				background: $bermuda;
+				border-radius: em(5px);
+				color: $white;
+			}		
+	}
+	 @include mq(medium){
+		@include flexbox;
+		width: 80%;
+    }
+}
+

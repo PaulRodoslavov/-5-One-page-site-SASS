@@ -1,0 +1,41 @@
+// ==========================================================================
+// Grid
+// ==========================================================================
+
+.container {
+	width: 90%;
+	max-width: em(1400px);
+	margin: 20px auto;
+}
+
+.grid__row {
+	@extend %center-align;
+    padding: 1em 0;
+    @include mq(medium){
+    	@include flexbox($jus-con: space-between);
+    }
+}
+
+.theme__colors{
+	@extend %grid__col;
+}
+
+.grid__col{
+	@include grid-colors($grid-theme-colors);
+	@include mq(medium){
+		@include g-columns; 
+		@include m(9){
+			@include flexbox($jus-con: center);
+		}
+	}	
+	@include m(6){
+		@include flexbox;
+	}
+}
+
+.centered{
+	margin: 0 auto;
+}
+
+
+

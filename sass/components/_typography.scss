@@ -1,4 +1,46 @@
+// ==========================================================================
+// Typography
+// ==========================================================================
+
 .link{
 	color: $scooter;
 	font-weight: $font-weight--medium;
+}
+
+.headline--secondary {
+	@extend %left-align;
+	letter-spacing: 1px;
+	color: getColor(grey, light);
+	font-weight: $font-weight--thin;
+	margin: 0;
+}
+
+.headline--primary{
+	color: $bermuda;
+	line-height: 1.2;
+	width: 90%;
+	margin: em(15px) 0 em(15px) em(15px); 
+	@extend %left-align;	
+}
+
+.blockquote{	
+	border-left: 6px solid $bermuda;
+	padding-left: em(15px);	
+	width: 80%;
+	margin: 20px auto 70px;
+	font-style: italic;
+	color: getColor(grey, light);
+	font-size: em(20px);
+	line-height: 1.2;
+	@extend %left-align;
+}
+
+.card {
+	@include mq(medium){
+			width: 90%;
+	    }
+	& p{
+		@extend %left-align;
+		color: getColor(grey);
+	}	 
 }
