@@ -16,7 +16,6 @@
     padding: 3em 0;
 }
 
-
 // ==========================================================================
 // Nav
 // ==========================================================================
@@ -32,7 +31,7 @@
 		}
 
 		&:hover {
-				background: $fountain-blue;
+				background: $bermuda;
 				border-radius: em(5px);
 				color: $white;
 			}		
@@ -54,24 +53,23 @@
 .headline--secondary {
 	@extend %left-align;
 	letter-spacing: 1px;
-	color: getColor(grey, x-light);
+	color: getColor(grey, light);
 	font-weight: $font-weight--thin;
 }
 
 .headline--primary{
-	color: $fountain-blue;
+	color: $bermuda;
 	line-height: 1.2;
 	width: 90%;
-	margin-left: em(15px);
+	margin: em(30px) 0 em(30px) em(15px); 
 	@extend %left-align;	
 }
 
-
-.blockquote{
-	border-left: 6px solid $fountain-blue;
+.blockquote{	
+	border-left: 6px solid $bermuda;
 	padding-left: em(15px);	
 	width: 80%;
-	margin: 20px auto 40px;
+	margin: 20px auto 70px;
 	font-style: italic;
 	color: getColor(grey, light);
 	font-size: em(20px);
@@ -83,21 +81,22 @@
 // Form
 // ==========================================================================
 
-.img--avatar{
-	display: block;
-	margin: 15px auto;
-}
-
 .form {
+	
+	@include e(label--hidden){
+		display: none;	
+	}
 
-	&__label--hidden{
-		display: none;
+	@include e(input){				
+		@extend %btn-border;
+		&:last-of-type{
+			margin: em(20px) auto;
+		}
 	}
-	&__input{
-		display: block;
-		border: none;
-		height: em(45px);
+	& > .btn--default {		
+		background: $scooter;		
 	}
+
 }
 
 
@@ -105,9 +104,10 @@
 
 
 
-
-
-
-.img--frame{
-	width: 100%;
+.btn{
+	@include bg-colors($ui-colors);
 }
+
+
+
+

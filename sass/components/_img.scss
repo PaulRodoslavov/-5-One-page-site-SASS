@@ -1,0 +1,14 @@
+// ==========================================================================
+// Images
+// ==========================================================================
+
+.img--avatar{
+	display: block;
+	margin: 15px auto;
+}
+
+.img--frame{
+	width: 100%;
+	border: 1px solid getColor(grey, x-light);
+	padding: em(10px);
+}

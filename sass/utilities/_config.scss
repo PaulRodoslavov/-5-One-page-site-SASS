@@ -14,6 +14,7 @@ $sunglo         : #e67478;
 $coral          : #ff784f;
 $purple-majesty : #9279c3;
 $scooter        : #39add1;
+$bermuda        : #6EDBBC;
 
 // Text
 
@@ -38,6 +39,17 @@ $palettes: (
 		dark     : darken($black, 10%)
 	)
 );
+
+// UI Colors
+
+$ui-colors: (
+  default : $scooter,
+  success : $emerald,
+  error   : $sunglo,
+  warning : $coral,
+  info    : $purple-majesty
+);
+
 
 // Font Weights
 
