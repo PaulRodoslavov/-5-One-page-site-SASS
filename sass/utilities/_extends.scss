@@ -6,19 +6,17 @@
 // Nav Items
 
 %nav-item-link {
-	display: flex;
 	height: em(50px);
 	color: getColor(grey);
-	padding: em(10px)
-
 }
 
 %nav-item-a {
-  font-weight: $font-weight--thin;
-  margin: auto;
-  font-size: em(18px);
-  color: inherit;
-  
+	display: block;
+ 	font-weight: $font-weight--thin;
+ 	padding: em(10px);
+ 	font-size: em(18px);
+ 	color: inherit;
+ 	width:100%;  
 }
 
 // ==========================================================================

@@ -6,21 +6,20 @@
 	padding: 0;
 	&__item{
 		@extend %nav-item-link;	
+		width:100%;
 		@include mq(medium){
-		margin-right: em(20px);
-
+		margin-right: em(10px);
     	}
 		
 		& a{			
 			font-weight: $font-weight--light;
 			@extend %nav-item-a;
-		}
-
-		&:hover {
+			&:hover {
 				background: $bermuda;
 				border-radius: em(5px);
 				color: $white;
-			}		
+			}
+		}				
 	}
 	 @include mq(medium){
 		@include flexbox;
